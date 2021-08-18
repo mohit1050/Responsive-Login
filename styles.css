@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.bg-gradient {
+  background-image: linear-gradient(to bottom right, #4ec8fc, #904efc);
+  height: 100vh;
+  width: 100%;
+}
+
+.center {
+  border-radius: 20px;
+  background-color: #fff;
+  width: 80%;
+  height: 80%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.login-img,
+.login-form {
+  height: 90%;
+  width: 45%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img-main {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.input-info {
+  padding: 20px;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  background-color: #e4f1ff;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 6px;
+  margin-bottom: 8px;
+}
+
+.btn-signup {
+  display: block;
+  margin: auto;
+  background-color: #0075ff;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  height: 35px;
+  width: 80px;
+  margin-top: 16px;
+}
+.btn-signup:hover {
+  cursor: pointer;
+}
+
+h6 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #c2c2c2;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  color: #919191;
+  font-weight: lighter;
+}
+h6 span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin: auto;
+  flex-direction: row;
+}
+.google {
+  background-image: url(assets/logo-google.svg);
+  background-size: 50%;
+}
+.facebook {
+  background-image: url(assets/logo-facebook.svg);
+  background-size: 50%;
+}
+.linkedin {
+  background-image: url(assets/logo-linkedln.svg);
+  background-color: rgb(24, 24, 112);
+  background-size: 50%;
+}
+.microsoft {
+  background-image: url(assets/logo-microsoft.svg);
+  background-size: 50%;
+}
+.sp-btn {
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 50px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sp-btn:hover {
+  cursor: pointer;
+}
+.login {
+  text-decoration: none;
+  color: #0075ff;
+}
+
+@media all and (max-width: 768px) {
+  .login-img {
+    display: none;
+  }
+  .login-form {
+    height: 90%;
+    width: 90%;
+  }
+}
+
+#password,
+#confirm-password {
+  background-image: url(assets/icon-eye.svg);
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
